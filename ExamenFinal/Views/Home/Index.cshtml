@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Examen de Programacion Avanzada</h1>
+        <p class="lead">Creacion de Gestion de Clientes</p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h1 id="title">ASP.NET</h1>
+            <p class="lead">Se creo controladores para gestionar Clientes, Ciudades, Categorias y por ultimo, un Reporte de Las Ciudades y los Clientes en Comun de las mismas</p>
+            <p><a href="@Url.Action("Index", "Cliente")" class="btn btn-primary btn-md">Clientes &raquo;</a></p>
+            <p><a href="@Url.Action("Index", "Categoria")" class="btn btn-primary btn-md">Categorías &raquo;</a></p>
+            <p><a href="@Url.Action("Index", "Ciudad")" class="btn btn-primary btn-md">Ciudades &raquo;</a></p>
+            <p><a href="@Url.Action("ReporteClientesPorCiudad", "Ciudad")" class="btn btn-primary btn-md">Reporte Clientes Por Ciudad &raquo;</a></p>
+        </section>
+    </div>
+</main>

@@ -1,0 +1,25 @@
+﻿@model List<ExamenFinal.Models.ReporteCiudadViewModel>
+
+@{
+    ViewBag.Title = "ReporteClientesPorCiudad";
+}
+
+<h2>ReporteClientesPorCiudad</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ciudad</th>
+            <th>Cantidad de Clientes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Ciudad</td>
+                <td>@item.CantidadClientes</td>
+            </tr>
+        }
+    </tbody>
+</table>
